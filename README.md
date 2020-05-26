@@ -10,6 +10,7 @@ Using https://developers.google.com/books/ API to retrieve book information on t
 
 Drag and drop function into two boxes below, maybe and yes (Personal Library) where they are held for user. Ability to move maybe to yes or delete. 
 Maybe and yes areas hold 20 books (decrease sizing). 
+
 Presentation 
 *   First upload clean lines, simple and obvious search function
 
