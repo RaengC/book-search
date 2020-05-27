@@ -48,11 +48,17 @@ $(() => {
     //queryAPI();
    
     // create event listener to displayResult 
-    $(".eventListener").on('click', () => {
+    $("#searchBtn").on('click', () => {
         console.log("btn clicked");
         
-        const search = $(".eventListener").val();
+        const search = $("#searchBtn").val();
         queryAPI(search);
+    })
+
+    //add clear button
+    $("#clearBtn").on('click', () => {
+        console.log("clear clicked");
+        $('#selectedItems').empty();
     })
     
 })
