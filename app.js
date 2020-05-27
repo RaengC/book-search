@@ -3,7 +3,7 @@ function queryAPI(search){
 
     //make Ajax call to google books (with filters for search term, maximum results and free-ebooks)
     $.ajax({
-        url: `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=6`,
+        url: `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=6&filter=ebooks`,
         method: "GET",
     })
     .then((response) => {
