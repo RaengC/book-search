@@ -3,7 +3,7 @@ function queryAPI(search){
 
     //make Ajax call to google books (with filters for search term, maximum results and free-ebooks)
     $.ajax({
-        url: `https://www.googleapis.com/books/v1/volumes?q=search+terms&maxResults=6&filter=free-ebooks`,
+        url: `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=6`,
         method: "GET",
     })
     .then((response) => {
@@ -49,15 +49,15 @@ $(() => {
    
     // create event listener to displayResult 
     $("#searchBtn").on('click', () => {
-        console.log("btn clicked");
+        //console.log("btn clicked");
         
-        const search = $("#searchBtn").val();
+        const search = $("#inp-limit").val();
         queryAPI(search);
     })
 
     //add clear button
     $("#clearBtn").on('click', () => {
-        console.log("clear clicked");
+        //console.log("clear clicked");
         $('#selectedItems').empty();
     })
     
