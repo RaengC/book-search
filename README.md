@@ -20,6 +20,7 @@ JS & JQ
 *   use async await?
     -   Activate search term on click
     -   Limit each search to 6 items
+    -   Only return free ebooks
 *   Add function to display search terms
     -   Jquery object to do this within the function. 
     -   Activate the jquery with an event listener
