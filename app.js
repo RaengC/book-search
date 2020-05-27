@@ -36,7 +36,7 @@ function displayResult(result) {
         console.log(list[i].volumeInfo.imageLinks.thumbnail);
         console.log(list[i].volumeInfo.categories[0]);
         bookList.append(`<li>${list[i].volumeInfo.title}</li>`)
-        bookList.append(`<li>${list[i].volumeInfo.imageLinks.thumbnail}</li>`)
+        bookList.append(`<img src="${list[i].volumeInfo.imageLinks.thumbnail}"/>"`)
         bookList.append(`<li>${list[i].volumeInfo.categories[0]}</li>`)
     }
  }
