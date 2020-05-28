@@ -38,6 +38,8 @@ function displayResult(result) {
                             <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/> 
                             <p class="card-text"> ${list[i].volumeInfo.categories[0]}<?p>
                         </div>`)
+    
+    
 
     }
  }
@@ -55,7 +57,7 @@ $(() => {
         //console.log("btn clicked");
         
         const search = $("#inp-limit").val();
-;
+
         queryAPI(search);
     })
 
@@ -70,6 +72,6 @@ $(() => {
         $("#inp-limit").val("");
     })
 
- 
+    $(".canDrag").draggable();
     
 })
