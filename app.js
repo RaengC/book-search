@@ -35,8 +35,9 @@ function displayResult(result) {
         // console.log(list[i].volumeInfo.imageLinks.thumbnail);
         // console.log(list[i].volumeInfo.categories[0]);
         bookList.append(`<div class="card">${list[i].volumeInfo.title}  
-                            <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/> 
-                            <p class="card-text"> ${list[i].volumeInfo.categories[0]}<?p>
+                        <li class="card-text"> ${list[i].volumeInfo.categories[0]}</li>    
+                        <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/> 
+                            
                         </div>`)
     
     $(".card").draggable();

@@ -1,4 +1,16 @@
 .card-body {
-    width: 200px;
+    width: inherit;
     padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.card {
+    margin: 0.4em; 
+}
+
+.card img {
+    width: fit-content;
+    align-content: center;
+}
+
