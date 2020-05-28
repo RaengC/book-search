@@ -34,10 +34,10 @@ function displayResult(result) {
         // console.log(list[i].volumeInfo.title);
         // console.log(list[i].volumeInfo.imageLinks.thumbnail);
         // console.log(list[i].volumeInfo.categories[0]);
-        bookList.append(`<p>${list[i].volumeInfo.title} 
-                            <img src="${list[i].volumeInfo.imageLinks.thumbnail}" class="card-img-top"/> 
-                            <p>${list[i].volumeInfo.categories[0]}</p>
-                        </p>`)
+        bookList.append(`<div class="card">${list[i].volumeInfo.title}  
+                            <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/> 
+                            <p class="card-text"> ${list[i].volumeInfo.categories[0]}<?p>
+                        </div>`)
 
     }
  }
