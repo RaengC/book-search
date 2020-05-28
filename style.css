@@ -16,16 +16,24 @@
     align-content: center;
 }
 
-#droppable { 
-    width: 150px; 
+.holdingBox {
+    justify-content: space-between; 
+}
+#summaryList, #yesList { 
+    width: 40%; 
     height: 150px; 
     padding: 0.5em; 
-    float: left; 
+    justify-content: space-between; 
     margin: 10px; 
     border: 3px solid black;
 }
 
+
 .dropOnActive {
     background-color: cornsilk;
 
+}
+
+.holdOnActive {
+    background-color: pink;
 }

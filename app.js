@@ -75,15 +75,27 @@ $(() => {
 
     //$(".canDrag").draggable();
 
-    $("#droppable").droppable({
+    $("#summaryList").droppable({
         drop: ( event, ui ) => {
-            console.log(event);
-            console.log(ui); //identifies a draggable item is in the event
-            $("#droppable").addClass('dropOnActive');
+            //console.log(event);
+            //console.log(ui); //identifies a draggable item is in the event
+            $("#summaryList").addClass('dropOnActive');
             ui.draggable.addClass('dropOnActive')
 
-            $("#droppable").append(ui.draggable);
+            $("#summaryList").append(ui.draggable);
         }
       });
+
+      $("#yesList").droppable({
+        drop: ( event, ui ) => {
+            //console.log(event);
+            //console.log(ui); //identifies a draggable item is in the event
+            $("#yesList").addClass('holdOnActive');
+            ui.draggable.addClass('holdOnActive')
+
+            $("#yesList").append(ui.draggable);
+        }
+      });
+      
     
 })
