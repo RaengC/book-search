@@ -24,22 +24,25 @@ function queryAPI(search){
 function displayResult(result) {
     //create list of results from 'items' in array to display on DOM
     const list = result.items; 
-
+  
     //console.log(list);
     const bookList = $("#bookSearch");
-
+    bookList.children().remove();
 
     //looping through the list specifically for title, image links, categories
     for(let i=0; i < list.length; i++) {
         // console.log(list[i].volumeInfo.title);
         // console.log(list[i].volumeInfo.imageLinks.thumbnail);
         // console.log(list[i].volumeInfo.categories[0]);
-        bookList.append(`<li>${list[i].volumeInfo.title}</li>`)
-        bookList.append(`<img src="${list[i].volumeInfo.imageLinks.thumbnail}"/>"`)
-        bookList.append(`<li>${list[i].volumeInfo.categories[0]}</li>`)
+        bookList.append(`<p>${list[i].volumeInfo.title} 
+                            <img src="${list[i].volumeInfo.imageLinks.thumbnail}" class="card-img-top"/> 
+                            <p>${list[i].volumeInfo.categories[0]}</p>
+                        </p>`)
 
     }
  }
+
+
 
 //on ready
 $(() => {
@@ -52,13 +55,21 @@ $(() => {
         //console.log("btn clicked");
         
         const search = $("#inp-limit").val();
+;
         queryAPI(search);
     })
 
     //add clear button
     $("#clearBtn").on('click', () => {
         //console.log("clear clicked");
-        $('#selectedItems').empty();
+        $('#bookSearch').empty();
     })
+
+    //attempting to clear input on use of clearBtn
+    $("#clearBtn").on('click', () => {
+        $("#inp-limit").val("");
+    })
+
+ 
     
 })
