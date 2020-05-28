@@ -39,7 +39,7 @@ function displayResult(result) {
                             <p class="card-text"> ${list[i].volumeInfo.categories[0]}<?p>
                         </div>`)
     
-    
+    bookList.draggable();
 
     }
  }
