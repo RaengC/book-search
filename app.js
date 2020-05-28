@@ -73,6 +73,17 @@ $(() => {
         $("#inp-limit").val("");
     })
 
-    $(".canDrag").draggable();
+    //$(".canDrag").draggable();
+
+    $("#droppable").droppable({
+        drop: ( event, ui ) => {
+            console.log(event);
+            console.log(ui); //identifies a draggable item is in the event
+            $("#droppable").addClass('dropOnActive');
+            ui.draggable.addClass('dropOnActive')
+
+            $("#droppable").append(ui.draggable);
+        }
+      });
     
 })
