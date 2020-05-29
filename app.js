@@ -35,17 +35,14 @@ function displayResult(result) {
         // console.log(list[i].volumeInfo.imageLinks.thumbnail);
         // console.log(list[i].volumeInfo.categories[0]);
         bookList.append(`<div class="card" data-toggle="tooltip" data-placement="right" title='${list[i].volumeInfo.description}'>
-         
                             <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/>
                             <div>
                                 ${list[i].volumeInfo.title} <br>
-                               ${list[i].volumeInfo.categories[0]}
+                               ${list[i].volumeInfo.authors[0]}
                             </div>   
                         </div>`)
 
         //adding preview
-
-
 
         $(".card").draggable();
 
@@ -87,8 +84,6 @@ $(() => {
 
     $("#summaryList").droppable({
         drop: (event, ui) => {
-            //console.log(event);
-            //console.log(ui); //identifies a draggable item is in the event
             $("#summaryList").addClass('dropOnActive');
             ui.draggable.addClass('dropOnActive')
 
@@ -98,8 +93,6 @@ $(() => {
 
     $("#yesList").droppable({
         drop: (event, ui) => {
-            //console.log(event);
-            //console.log(ui); //identifies a draggable item is in the event
             $("#yesList").addClass('holdOnActive');
             ui.draggable.addClass('holdOnActive')
 
