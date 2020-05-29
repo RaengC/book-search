@@ -34,6 +34,7 @@
     background-color: #e9ecef;
     max-height: 300px;
     text-align: center;
+
 }
 
 .dropOnActive {
@@ -42,4 +43,17 @@
 
 .holdOnActive {
     background-color: pink;
+}
+
+
+/* need to find way to make cards in holding areas smaller and within box */
+/* .holdOnActive, .card {
+    text-align: left;
+
+}  */
+
+body {
+    background: url(images/arch-library.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
 }
