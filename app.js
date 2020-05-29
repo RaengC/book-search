@@ -87,6 +87,7 @@ $(() => {
             $("#summaryList").addClass('dropOnActive');
             ui.draggable.addClass('dropOnActive')
 
+            ui.draggable.removeAttr('style');
             $("#summaryList").append(ui.draggable);
         }
     });
@@ -96,8 +97,8 @@ $(() => {
             $("#yesList").addClass('holdOnActive');
             ui.draggable.addClass('holdOnActive')
 
-            //ui.draggable.draggable('disable');
-            //ui.draggable.removeAttr('style');
+            ui.draggable.draggable('disable');
+            ui.draggable.removeAttr('style');
             $("#yesList").append(ui.draggable);
         }
     });
