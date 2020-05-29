@@ -37,8 +37,8 @@ function displayResult(result) {
         bookList.append(`<div class="card" data-toggle="tooltip" data-placement="right" title='${list[i].volumeInfo.description}'>
                             <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/>
                             <div>
-                                ${list[i].volumeInfo.title} <br>
-                               ${list[i].volumeInfo.authors[0]}
+                                <h5>${list[i].volumeInfo.title}</h5> <br>
+                               <h6>${list[i].volumeInfo.authors[0]}</h6>
                             </div>   
                         </div>`)
 
@@ -96,6 +96,8 @@ $(() => {
             $("#yesList").addClass('holdOnActive');
             ui.draggable.addClass('holdOnActive')
 
+            //ui.draggable.draggable('disable');
+            //ui.draggable.removeAttr('style');
             $("#yesList").append(ui.draggable);
         }
     });

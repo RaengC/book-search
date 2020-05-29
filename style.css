@@ -8,10 +8,12 @@
 .card {
     max-width: 150px;
     margin: 15px;
+    padding: inherit;
+    background-color: #e9ecef;
 }
 
 .card img {
-    max-width: 150px;
+    height: 200px;
 
 }
 
@@ -25,13 +27,13 @@
 }
 
 #summaryList, #yesList { 
-    width: 40%; 
+    width: 48%; 
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
     background-color: #e9ecef;
-    height: fit-content;
-
+    max-height: 300px;
+    text-align: center;
 }
 
 .dropOnActive {
