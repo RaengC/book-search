@@ -62,9 +62,8 @@
 
 
 /* need to find way to make cards in holding areas smaller and within box */
-.holdOnActive, .card {
+.holdOnActive, .dropOnActive > .card {
     text-align: left;
-
 } 
 
 body {
