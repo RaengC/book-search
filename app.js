@@ -78,8 +78,6 @@ $(() => {
     })
 
 
-
-
     //$(".canDrag").draggable();
 
     $("#summaryList").droppable({

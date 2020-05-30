@@ -26,34 +26,50 @@
     justify-content: space-between; 
 }
 
-#summaryList, #yesList { 
+#summaryList { 
     width: 48%; 
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
     background-color: #e9ecef;
-    max-height: 300px;
     text-align: center;
     border-radius: .3rem;
+    height: auto;
+}
+
+#yesList { 
+    width: 48%; 
+    min-height: 150px; 
+    padding: 0.5em; 
+    margin: 10px; 
+    background-color: #e9ecef;
+    text-align: center;
+    border-radius: .3rem;
+    height: auto;
 }
 
 .dropOnActive {
     background-color: cornsilk;
+    flex-wrap: wrap;
 }
 
 .holdOnActive {
     background-color: pink;
+    flex-wrap: wrap;
 }
 
 
 /* need to find way to make cards in holding areas smaller and within box */
-/* .holdOnActive, .card {
+.holdOnActive, .card {
     text-align: left;
-
-}  */
+} 
 
 body {
     background: url(images/arch-library.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+}
+
+.card .ui-draggable .ui-draggable-handle .holdOnActive .ui-draggable-disabled {
+    width: 150px;
 }
