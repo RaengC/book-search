@@ -34,8 +34,8 @@ function displayResult(result) {
         // console.log(list[i].volumeInfo.title);
         // console.log(list[i].volumeInfo.imageLinks.thumbnail);
         // console.log(list[i].volumeInfo.categories[0]);
-        bookList.append(`<div class="card" data-toggle="tooltip" data-placement="right" title='${list[i].volumeInfo.description}'>
-                            <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top"/>
+        bookList.append(`<div class="card shadow" data-toggle="tooltip" data-placement="right" title='${list[i].volumeInfo.description}'>
+                            <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top shadow-sm"/>
                             <div>
                                 <h5>${list[i].volumeInfo.title}</h5> <br>
                                <h6>${list[i].volumeInfo.authors[0]}</h6>
@@ -77,7 +77,10 @@ $(() => {
         $("#inp-limit").val("");
     })
 
-
+    $("#summaryBtn").on('click', () => {
+        $("#summaryList .card").remove();
+    })
+    
     //$(".canDrag").draggable();
 
     $("#summaryList").droppable({

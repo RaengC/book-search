@@ -9,7 +9,8 @@
     max-width: 150px;
     margin: 15px;
     padding: inherit;
-    background-color: #f6f2f1;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .card img {
@@ -31,7 +32,6 @@
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
-    background-color: #f6f2f1;
     text-align: center;
     border-radius: .3rem;
     height: auto;
@@ -42,10 +42,19 @@
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
-    background-color: #f6f2f1;
     text-align: center;
     border-radius: .3rem;
     height: auto;
+}
+#yesList h4, #summaryList h4 {
+    flex-basis: 100%;
+}
+
+.jumbotron, #summaryList, #yesList {
+    background: url(images/books.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    color: white;
 }
 
 .dropOnActive {
@@ -64,6 +73,7 @@
 /* need to find way to make cards in holding areas smaller and within box */
 .holdOnActive, .dropOnActive > .card {
     text-align: left;
+
 } 
 
 body {
@@ -72,11 +82,11 @@ body {
     height: 100%;
 }
 
-.jumbotron {
-    background-color:#f6f2f1;
-}
-
-
 .card .ui-draggable .ui-draggable-handle .holdOnActive .ui-draggable-disabled {
     width: 150px;
+}
+
+.btn {
+    background-color:  #6a121e;
+    border: #6a121e;
 }
