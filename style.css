@@ -9,7 +9,7 @@
     max-width: 150px;
     margin: 15px;
     padding: inherit;
-    background-color: whitesmoke;
+    background-color: #f5f2ed;
     color: black;
 }
 
@@ -50,7 +50,7 @@
     flex-basis: 100%;
 }
 
-.jumbotron, #summaryList, #yesList {
+.jumbotron, #summaryList, #yesList  {
     background: url(images/books.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
@@ -77,7 +77,7 @@
 } 
 
 body {
-    background: url(images/arch-library.jpg) no-repeat center center fixed;
+    background: url(images/Stuttgart-City-Library-1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
