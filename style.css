@@ -49,19 +49,22 @@
 }
 
 .dropOnActive {
-    background-color: cornsilk;
+    background-color: #fce6d7;
     flex-wrap: wrap;
+    margin: inherit;
 }
 
 .holdOnActive {
-    background-color: pink;
+    background-color: #ebb998;
     flex-wrap: wrap;
+    margin: inherit;
 }
 
 
 /* need to find way to make cards in holding areas smaller and within box */
 .holdOnActive, .card {
     text-align: left;
+
 } 
 
 body {
