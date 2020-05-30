@@ -9,7 +9,7 @@
     max-width: 150px;
     margin: 15px;
     padding: inherit;
-    background-color: #e9ecef;
+    background-color: #f6f2f1;
 }
 
 .card img {
@@ -31,7 +31,7 @@
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
-    background-color: #e9ecef;
+    background-color: #f6f2f1;
     text-align: center;
     border-radius: .3rem;
     height: auto;
@@ -42,7 +42,7 @@
     min-height: 150px; 
     padding: 0.5em; 
     margin: 10px; 
-    background-color: #e9ecef;
+    background-color: #f6f2f1;
     text-align: center;
     border-radius: .3rem;
     height: auto;
@@ -72,6 +72,11 @@ body {
     background-size: cover;
     height: 100%;
 }
+
+.jumbotron {
+    background-color:#f6f2f1;
+}
+
 
 .card .ui-draggable .ui-draggable-handle .holdOnActive .ui-draggable-disabled {
     width: 150px;
