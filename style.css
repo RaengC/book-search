@@ -70,16 +70,15 @@
 }
 
 
-/* need to find way to make cards in holding areas smaller and within box */
 .holdOnActive, .dropOnActive > .card {
     text-align: left;
-
 } 
 
 body {
     background: url(images/Stuttgart-City-Library-1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+
 }
 
 .card .ui-draggable .ui-draggable-handle .holdOnActive .ui-draggable-disabled {
