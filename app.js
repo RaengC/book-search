@@ -18,7 +18,7 @@ function displayResult(result) {
     const bookList = $("#bookSearch");
     bookList.children().remove();
 
-    for (let i = 0; i < list.length; i++) {);
+    for (let i = 0; i < list.length; i++) {
         bookList.append(`<div class="card shadow" data-toggle="tooltip" data-placement="right" title='${list[i].volumeInfo.description}'>
                             <img src=${list[i].volumeInfo.imageLinks.thumbnail} class="card-img-top shadow-sm"/>
                             <div>
