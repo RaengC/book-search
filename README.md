@@ -8,13 +8,14 @@ Using https://developers.google.com/books/ API to retrieve book information on t
     -   Author
     -   Genre
     -   Random word (will have to check we can search randomly)
-    -
 
 Drag and drop function into two boxes below, maybe and yes (Personal Library) where they are held for user. Ability to move maybe to yes or delete.
 Maybe and yes areas hold 20 books (decrease sizing).
 
 #### FUTURE WORK
 save summary list and personal libary into respective arrays in JS, and store to local storage.
+
+[Live Site Link Here](http://nervous-payment.surge.sh/)
 
 ### Site Presentation
 *   First upload clean lines, simple and obvious search function
