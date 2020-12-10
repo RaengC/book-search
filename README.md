@@ -1,21 +1,28 @@
-Project plan
+# e-Book Search Engine
 
-Summary
-Using https://developers.google.com/books/ API to retrieve book information on top books by search terms. 6 books displayed below, with image and onclick summary appears. 
+## Project plan
+
+### Summary
+Using https://developers.google.com/books/ API to retrieve book information on top books by search terms. 6 books displayed below, with image and onclick summary appears.
 *   Search areas displayed in search box:
     -   Author
     -   Genre
     -   Random word (will have to check we can search randomly)
     -
 
-Drag and drop function into two boxes below, maybe and yes (Personal Library) where they are held for user. Ability to move maybe to yes or delete. 
-Maybe and yes areas hold 20 books (decrease sizing). 
+Drag and drop function into two boxes below, maybe and yes (Personal Library) where they are held for user. Ability to move maybe to yes or delete.
+Maybe and yes areas hold 20 books (decrease sizing).
 
-**  FUTURE WORK -> save summary list and personal libary into respective arrays in JS, and store to local storage. 
+#### FUTURE WORK
+save summary list and personal libary into respective arrays in JS, and store to local storage.
 
-Presentation 
+### Site Presentation
 *   First upload clean lines, simple and obvious search function
 
+![images](images/main-page.jpg)
+
+
+## Technologies Used
 HTML
 *   script jquery, Bootscrap, jquery ui
 
@@ -28,7 +35,7 @@ JS & JQ
     -   Activate jquery with an event listener
     -   Limit search to 6 items
     -   Only return ebooks   
-*   DOM manipulation, 
+*   DOM manipulation,
     -   loop to search for selected:
         -   Book tile
         -   image
@@ -37,15 +44,16 @@ JS & JQ
     -   Bootscrap to display on DOM
         -   card
         -   toggle to display description
-    -   Draggable capacity added to card. 
-    -   Remove children on new search. 
+    -   Draggable capacity added to card.
+    -   Remove children on new search.
 
+![Search Page](images/search.jpg)
 *   On ready
-    -   Event listener linked to search button. 
-    -   Clear button, 
+    -   Event listener linked to search button.
+    -   Clear button,
     -   Drag and drop function
-        -   Add class for zones, clear function void when cards added. 
-        -   Add drop off zones x 2 
+        -   Add class for zones, clear function void when cards added.
+        -   Add drop off zones x 2
             *   Summary List
             *   Personal Library   
 
